@@ -1,0 +1,83 @@
+html {
+	color: #34495e;
+	font-family: 'Segoe UI';
+	overflow: hidden;
+}
+
+#wrap {
+	display: flex;
+	align-items: center;
+	margin-left: 15px;
+	top: 0;
+	bottom: 0;
+	color: rgba(255, 255, 255, 0.9);
+	border-radius: 2px;
+	vertical-align: middle;
+	height: 100vh;
+}
+
+p {
+	float: left;
+	font-size: 2em;
+}
+
+.header {
+	font-family: 'Segoe UI';
+	height: 35px;
+	width: auto;
+	background-color: #1C1C1C;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-top-left-radius: 2px 2px;
+	border-top-right-radius: 2px 2px;
+}
+
+.jobs {
+	font-family: 'Segoe UI';
+	padding-top: 10px;
+	background-color: #1C1C1C;
+	height: 3vw;
+	width: 100%;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.jobs p {
+	font-family: 'Segoe UI';
+}
+
+.serverinfo {
+	font-size: 0.8vw;
+	text-align: center;
+}
+
+.ui__jobs {
+	width: 7em;
+	background: rgba(0,0,0,0.35);
+	border-radius: 1em;
+	text-align: center;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.ui__jobs p {
+	padding: none;
+	text-decoration: none;
+	line-height: 0.25em;
+	font-size: 1.25em;
+	width: 6em;
+	display: inline-block;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.ui__jobs p strong {
+	content: '';
+	top: auto; 
+	right: auto; 
+	min-width: 4em;
+	height: 1em;
+	padding: none;
+	margin-left: -2.75em;
+	padding-left: 0;
+	display: inline-block;
+}

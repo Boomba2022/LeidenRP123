@@ -1,0 +1,16 @@
+Locales['en'] = {
+  ['shop_robbery'] = 'Winkel overval',
+  ['press_to_rob'] = 'Druk op ~INPUT_CONTEXT~ om de winkel te overvallen',
+  ['robbery_timer'] = 'Winkel overval ~r~%s~s~ seconden nodig',
+  ['recently_robbed'] = 'De winkel is laatst al beroven. Wacht ~y~%s~s~ seconden om het te proberen',
+  ['rob_in_prog'] = '~r~Winkel overval bezig op ~b~%s~s~',
+  ['started_to_rob'] = 'Je hebt een overval gestart op ~y~%s~s~',
+  ['alarm_triggered'] = 'Het alarm is afgegaan',
+  ['robbery_complete'] = '~r~De overval was succesvol~s~, je hebt ~g~$%s~s~ gestolen',
+  ['robbery_complete_at'] = '~r~Overval succesvol op ~y~%s~s~',
+  ['robbery_cancelled'] = 'De overval is geannuleerd.',
+  ['robbery_cancelled_at'] = '~r~De overval op ~b~%s~s~ is geannuleerd.!',
+  ['min_police'] = 'Er moeten minimaal ~b~%s cops~s~ in town to rob.',
+  ['robbery_already'] = '~r~Een overval is al bezig.',
+  ['no_threat'] = 'De winkelier is niet bang, je bent niet zo eng',
+}

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+
+/* CSS Reset */
+
+
+/*small notify*/
+
+
+.template, .notification {
+    display: none;
+}
+
+.notif-container {
+    width: 20vw;
+    position: absolute;
+    top: 4vh;
+    right: 1vw;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.notification {
+    padding: 10px;
+    width: fit-content;
+    border-radius: 2px;
+    margin: 5px;
+    font: caption;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+}
+
+.nwl {
+    background: #146ec8d3;
+    color: rgb(255, 255, 255);
+}
+
+.success {
+    background: rgba(20, 110, 200, 0.815);
+    color: rgb(255, 255, 255);
+}
+
+.primary {
+    background-color: rgba(20, 110, 200, 0.815);
+    color: #ffffff;
+}
+
+.secondary {
+    background-color: rgb(20, 110, 200, 0.815);
+    color: #ffffff;
+}
+
+.error {
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+.container {
+    display: none;
+    position: absolute;
+    bottom: -70%;
+    right: 5vh;
+}
+/*  */
+.phone-notification-container {
+    position: absolute;
+    height: 5.5vh;
+    width: 22vh;
+    background-color: rgba(39, 39, 39, 0.9);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -8%;
+    border-radius: 3vh;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+    z-index: 140;
+}
+
+.notification-icon {
+    position: absolute;
+    height: 100%;
+    width: 5vh;
+    text-align: center;
+    line-height: 5.7vh;
+    color: #ff1900;
+    font-size: 2.5vh;
+}
+
+.notification-title {
+    position: absolute;
+    top: 1vh;
+    left: 4.5vh;
+    font-size: 1.1vh;
+    font-family: 'Heebo', sans-serif;
+    color: #000000;
+}
+
+.notification-text {
+    position: absolute;
+    top: 2.7vh;
+    left: 4.5vh;
+    font-size: 1vh;
+    font-family: 'Heebo', sans-serif;
+    color: rgb(255, 0, 0);
+    width: 16vh;
+    overflow: hidden;
+}
+
+/* Phone Notification END */
+
+.call-notifications {
+    display: none;
+    position: absolute;
+    background: #000000ea;
+    height: 9vh;
+    width: 34vh;
+    bottom: 16vh;
+    right: -35vh;
+    border-radius: 1.7vh;
+    z-index: -5;
+}
+.call-notifications-shake {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+  
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.screen-notifications-container {
+    display: none;
+    position: absolute;
+    background: rgba(255, 0, 0, 0.9);
+    height: 9vh;
+    width: 34vh;
+    bottom: 5vh;
+    right: -35vh;
+    border-radius: 1.7vh;
+    z-index: -5;
+}
+
+.screen-notification-icon {
+    position: absolute;
+    line-height: 9.3vh;
+    left: 2vh;
+    font-size: 3.75vh;
+    color: rgb(255, 255, 255);
+}
+
+.screen-notification-title {
+    position: absolute;
+    line-height: 5.5vh;
+    left: 7.5vh;
+    font-size: 1.5vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Heebo', sans-serif;
+}
+
+.screen-notification-content {
+    position: absolute;
+    top: 4.2vh;
+    left: 7.5vh;
+    font-size: 1.2vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Heebo', sans-serif;
+    height: 3.5vh;
+    width: 26vh;
+    overflow: hidden;
+}
+
+.call-notifications-icon {
+    position: absolute;
+    line-height: 9.3vh;
+    left: 2vh;
+    font-size: 3.75vh;
+    color: rgb(255, 255, 255);
+    transform: rotate(90deg);
+}
+
+.call-notifications-title {
+    position: absolute;
+    line-height: 5.5vh;
+    left: 7.5vh;
+    font-size: 1.5vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Heebo', sans-serif;
+}
+
+.call-notifications-content {
+    position: absolute;
+    top: 4.2vh;
+    left: 7.5vh;
+    font-size: 1.2vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Heebo', sans-serif;
+    height: 3.5vh;
+    width: 26vh;
+    overflow: hidden;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: none;
+}
+
+/* body {
+	background: #3498db;
+} */
+
+#PINform input:focus,
+#PINform select:focus,
+#PINform textarea:focus,
+#PINform button:focus {
+	outline: none;
+}
+#PINform {
+	background: #000000;
+	position: absolute;
+	width: 300px; height: 400px;
+	left: 50%;
+	margin-left: -180px;
+	top: 50%;
+	margin-top: -215px;
+	padding: 30px;
+      -webkit-box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+         -moz-box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+              box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+}
+#PINbox {
+	background: #ff0000;
+	margin: 3.5%;
+	width: 92%;
+	font-size: 4em;
+	text-align: center;
+	border: 1px solid #000000;
+}
+.PINbutton {
+	background: #ededed;
+	color: #ff0000;
+	border: none;
+	border-radius: 50%;
+	font-size: 1.5em;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	margin: 7px 20px;
+	padding: 0;
+}
+.clear, .enter {
+	font-size: 1em;
+}
+.PINbutton:hover {
+ 	box-shadow: #000000 0 0 1px 1px;
+}
+.PINbutton:active {
+ 	background: #ff0000;
+	color: rgb(0, 0, 0);
+}
+.clear:hover {
+ 	box-shadow: #ff3c41 0 0 1px 1px;
+}
+.clear:active {
+ 	background: #ff3c41;
+	color: rgb(0, 0, 0);
+}
+.enter:hover {
+ 	box-shadow: #47cf73 0 0 1px 1px;
+}
+.enter:active {
+ 	background: #ff0000;
+	color: rgb(0, 0, 0);
+}
+.shadow{
+      -webkit-box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+         -moz-box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+              box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+}
