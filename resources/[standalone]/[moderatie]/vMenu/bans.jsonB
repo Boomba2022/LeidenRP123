@@ -1,0 +1,830 @@
+[
+  {
+    "playerName": "[Lil' Joe]",
+    "identifiers": [
+      "steam:1100001059b91b1",
+      "license:4a18da531f7ddaaaf1e216e93a15348ac5967ef8",
+      "xbl:2533275028046531",
+      "live:985156677856605",
+      "discord:241279729448124416",
+      "ip:92.111.37.53"
+    ],
+    "bannedUntil": "2020-05-01T11:23:43",
+    "banReason": "Banned by staff. HACKER, leuke hack wel, shit typen als mijn naam",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "Arie_Biersteker",
+    "identifiers": [
+      "steam:11000010aa8323c",
+      "license:cf7cfccf873701fd67a7fd21d9c169f1df66bf9a",
+      "discord:212568087063560192",
+      "ip:94.208.194.158"
+    ],
+    "bannedUntil": "2020-05-01T11:23:54",
+    "banReason": "Banned by staff. hacken zelfde reden",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "oewie",
+    "identifiers": [
+      "steam:11000011a3fa6fc",
+      "license:4114d561e8fec1763694b3e702d215b1fa22e69b",
+      "discord:439056179969261569",
+      "ip:84.29.114.11"
+    ],
+    "bannedUntil": "2020-05-01T11:24:06",
+    "banReason": "Banned by staff. hacken zelfde reden",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "FrankDon",
+    "identifiers": [
+      "steam:11000013fa21eed",
+      "license:73686470b85bcd17d43d06fbc3de47b491cb7ae3",
+      "xbl:2535445881346652",
+      "live:914801523638498",
+      "discord:381078619276967937",
+      "ip:94.227.22.178"
+    ],
+    "bannedUntil": "2020-05-01T15:47:01",
+    "banReason": "Banned by staff. RDM ",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "Mark Rutte",
+    "identifiers": [
+      "steam:11000013c3280cf",
+      "license:1bfc17c0e3f93274d6534acaff2085f10532390a",
+      "xbl:2535420898010347",
+      "live:844428436546737",
+      "discord:662048879398748182",
+      "ip:31.201.100.20"
+    ],
+    "bannedUntil": "3000-01-01T00:00:00",
+    "banReason": "Troller",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "XXWINNIEDPOEXX",
+    "identifiers": [
+      "steam:11000013c9476fc",
+      "license:9b7727f716534075bd605c4c646b0101e6f9c5fa",
+      "discord:434044790179495942",
+      "ip:213.127.108.174"
+    ],
+    "bannedUntil": "3000-01-01T00:00:00",
+    "banReason": "Troller",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "Tuna_Fener",
+    "identifiers": [
+      "steam:110000115b195d7",
+      "license:e19dd6f3ef32f2da8913064632ca533d963495d0",
+      "xbl:2535463976534450",
+      "live:1899947140698004",
+      "discord:362601696318455809",
+      "ip:86.83.56.130"
+    ],
+    "bannedUntil": "3000-01-01T00:00:00",
+    "banReason": "Troller",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "Rainy",
+    "identifiers": [
+      "steam:11000013b412788",
+      "license:c125fc9d4d407093c50664438e844e708cfda1bc",
+      "xbl:2535415721110180",
+      "live:914798346289546",
+      "discord:474487394238726145",
+      "ip:213.127.107.176"
+    ],
+    "bannedUntil": "2020-04-02T16:39:51",
+    "banReason": "Schenden van regel. (1.8) Vluchten zonder geldige RP reden",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "W4cko",
+    "identifiers": [
+      "steam:110000101b7e641",
+      "license:57810730c80ff965550042d96b4a60d2e6e3b593",
+      "discord:373395090619760642",
+      "ip:91.179.54.43"
+    ],
+    "bannedUntil": "2020-04-04T17:44:48",
+    "banReason": "Banned by staff. RDM, VDM en trollen",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "Nick1245",
+    "identifiers": [
+      "steam:110000133fed113",
+      "license:4136be9e261e545e6a55f2e9b49beca68ff05e51",
+      "discord:336512357314592769",
+      "ip:89.98.129.216"
+    ],
+    "bannedUntil": "2020-04-03T20:01:01",
+    "banReason": "Banned by staff. | Staff ontwijke dus gauw leaven | En VDM",
+    "bannedBy": "Potlood"
+  },
+  {
+    "playerName": "Dekunk 3",
+    "identifiers": [
+      "steam:110000108e9fa32",
+      "license:b17e82f6eee4af291b661d2d4aad4731712aab23",
+      "xbl:2535453951782746",
+      "live:1829581736307166",
+      "discord:356826075013316608",
+      "ip:178.85.43.52"
+    ],
+    "bannedUntil": "2020-05-03T16:19:42",
+    "banReason": "Banned by staff. hacken , lekker autos open maken en weg rijden :)",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "pepijnjanssen04",
+    "identifiers": [
+      "steam:110000134bc04f9",
+      "license:28e24daf550fd83502fbfe1224f2bdfc257c8d57",
+      "discord:564906484308115476",
+      "ip:77.170.25.23"
+    ],
+    "bannedUntil": "2020-04-04T22:24:13",
+    "banReason": "Stelen van overheidsvoertuigen | Failrp",
+    "bannedBy": "JustSteijn25"
+  },
+  {
+    "playerName": "Rust is ez",
+    "identifiers": [
+      "steam:110000116160906",
+      "license:93773d31cfc4ac03a53966d13ecfac9909b62f28",
+      "discord:419773539697295361",
+      "ip:94.209.251.42"
+    ],
+    "bannedUntil": "2020-04-05T08:52:02",
+    "banReason": "Banned by staff. | VDM | FailRP. | Met 180kmh op 2 man inrijden en dan gewoon rustig door lopen terwijl je eruit springt.",
+    "bannedBy": "Potlood"
+  },
+  {
+    "playerName": "InvalidPlayerName",
+    "identifiers": [],
+    "bannedUntil": "2020-04-04T01:53:55",
+    "banReason": "Schelden ",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "mag ik wat vraagen",
+    "identifiers": [
+      "steam:1100001141d50f6",
+      "license:47075c3a0ba903865408a8d62ffdc6d6e0aef45f",
+      "discord:323820893765894155",
+      "ip:82.73.231.12"
+    ],
+    "bannedUntil": "2020-04-06T17:03:26",
+    "banReason": "Domme lag. Report spam. Mensen slaan in jail. Mensen zijn je broer niet inteelt jog",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "sybe",
+    "identifiers": [
+      "steam:11000013b46cd52",
+      "license:9db2629847458b4f95e4f63c7dad373756618224",
+      "xbl:2535471457714024",
+      "live:1055518401859183",
+      "ip:80.200.227.254"
+    ],
+    "bannedUntil": "2020-05-04T18:50:19",
+    "banReason": "Skidoo Skiday, you are now permanently away",
+    "bannedBy": "JustSteijn25"
+  },
+  {
+    "playerName": "noah.mesens",
+    "identifiers": [
+      "steam:11000013609469d",
+      "license:496c77f41c0f28034c59ff2161a7f5d1d967348b",
+      "xbl:2535431245597637",
+      "live:1055518671161444",
+      "discord:502140847903604756",
+      "ip:81.82.140.160"
+    ],
+    "bannedUntil": "2020-05-04T18:50:34",
+    "banReason": "Skidoo Skiday, you are now permanently away",
+    "bannedBy": "JustSteijn25"
+  },
+  {
+    "playerName": "Huup",
+    "identifiers": [
+      "steam:11000013ca8d860",
+      "license:652981e22188528c85114d21b70f8e28a988662e",
+      "discord:462521151810174986",
+      "ip:217.123.100.207"
+    ],
+    "bannedUntil": "2020-04-06T18:55:10",
+    "banReason": "Failrp | Geen intentie tot rp",
+    "bannedBy": "JustSteijn25"
+  },
+  {
+    "playerName": "Aaron",
+    "identifiers": [
+      "steam:11000013ea4d87e",
+      "license:49a64f24d0b403672bf35c85fbe9a84fb2c098e8",
+      "discord:617031779920117760",
+      "ip:86.80.16.75"
+    ],
+    "bannedUntil": "2020-04-06T19:36:01",
+    "banReason": "Banned by staff. | VDM | Geen intentie tot rp | Geen mic",
+    "bannedBy": "Potlood"
+  },
+  {
+    "playerName": "SwissOrange",
+    "identifiers": [
+      "steam:11000010d2ae397",
+      "license:bc9f7d95c5f806ec5c8e7b97a968f7ff2092dc1a",
+      "xbl:2535407592957631",
+      "live:1055522157104585",
+      "ip:84.24.104.239"
+    ],
+    "bannedUntil": "2020-04-04T22:30:05",
+    "banReason": "Banned by staff. GTA rijstijl",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "SwissBlue",
+    "identifiers": [
+      "steam:1100001119569e4",
+      "license:d638d189cd4eaa7651f7564ce8222d7fd7ac23d2",
+      "ip:213.46.72.239"
+    ],
+    "bannedUntil": "2020-04-04T21:31:10",
+    "banReason": "Banned by staff. RDM",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "Blaaspijpjager",
+    "identifiers": [
+      "steam:11000010e8ca55c",
+      "license:bf671b4dcdb0497381ef9bf29e1b09767585c2ea",
+      "xbl:2535447453517914",
+      "live:914801459232571",
+      "discord:318751776952287233",
+      "ip:94.208.81.237"
+    ],
+    "bannedUntil": "2020-04-06T14:02:07",
+    "banReason": "Banned by staff. GTA rijstijl en auto's opblazen (unban niet mogelijk)",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "erennsimsek.0",
+    "identifiers": [
+      "steam:110000135a11abd",
+      "license:2b4d0e45b55ddfcb21105e9c8c1a78df1d63a25b",
+      "discord:510060357339971584",
+      "ip:77.173.195.45"
+    ],
+    "bannedUntil": "2020-04-06T15:17:55",
+    "banReason": "Banned by staff. schelden met kanker",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "Dypo",
+    "identifiers": [
+      "steam:11000010e8c476b",
+      "license:ab3e7458778ab4860d387d43c21c544b1bbee417",
+      "xbl:2535420166987704",
+      "live:985157367488900",
+      "ip:81.207.164.31"
+    ],
+    "bannedUntil": "2020-05-05T16:23:07",
+    "banReason": "Banned by staff. Vermoedelijke hacken",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "C4 I Joost",
+    "identifiers": [
+      "steam:110000114221d7d",
+      "license:618343ba1e065573ebf442719e79fc34bf1a78d1",
+      "discord:198098168573984768",
+      "ip:82.95.193.51"
+    ],
+    "bannedUntil": "2020-04-06T02:08:59",
+    "banReason": "Banned by staff. VDM in greenzone",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "Snapking",
+    "identifiers": [
+      "steam:1100001109cc6c2",
+      "license:4821ed2132d9c5db3831683513d45b7fa1c93aad",
+      "discord:373824863955189763",
+      "ip:80.60.73.10"
+    ],
+    "bannedUntil": "2020-04-06T00:09:46",
+    "banReason": "Banned by staff. RDM in greenzone",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "GewoonDani",
+    "identifiers": [
+      "steam:110000117571509",
+      "license:f3f9d85eefc32fe0dcfa639c39d76efeb2d6f91e",
+      "discord:494443373583663114",
+      "ip:217.123.202.131"
+    ],
+    "bannedUntil": "2020-04-06T20:17:02",
+    "banReason": "Banned by staff. EARAPEN MET MUZIEK EEN TROLLEN",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "Pipolakki",
+    "identifiers": [
+      "steam:11000010d999d9a",
+      "license:942f5fcffc556d74983f8fd2bfac6707446fce4a",
+      "xbl:2533274899476354",
+      "live:1055521022199167",
+      "discord:249442685385965568",
+      "ip:213.127.123.171"
+    ],
+    "bannedUntil": "2020-04-07T20:25:38",
+    "banReason": "Stelen van overheidsvoertuigen | Failrp",
+    "bannedBy": "JustSteijn25"
+  },
+  {
+    "playerName": "quinmoorman14",
+    "identifiers": [
+      "steam:11000013b110841",
+      "license:401fd356484f0520aba512a279a33dd8e3563fab",
+      "discord:454307021395591188",
+      "ip:84.29.192.200"
+    ],
+    "bannedUntil": "2020-04-06T01:08:15",
+    "banReason": "Geen mic, Overheidsvoertui stelen",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "Asuka",
+    "identifiers": [
+      "steam:110000106872c5d",
+      "license:bfd40e6bbeeb0b8f5544aa62343f34814904f332",
+      "discord:175051703886807040",
+      "ip:213.127.27.10"
+    ],
+    "bannedUntil": "2020-04-06T02:23:42",
+    "banReason": "Overheidsvoertuig stelen",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "tibo.goet",
+    "identifiers": [
+      "steam:11000013d217a35",
+      "license:2700852a4f0bb466f4215dd247d1dd1b55064051",
+      "discord:533397986697412619",
+      "ip:91.179.84.149"
+    ],
+    "bannedUntil": "3000-01-01T00:00:00",
+    "banReason": "Modder",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "Shadow",
+    "identifiers": [
+      "steam:110000135b660a3",
+      "license:6a4864300703fb494f7fbf5cd1311aff7f066847",
+      "xbl:2535451701939841",
+      "live:844428463102964",
+      "fivem:811013",
+      "ip:89.98.225.108"
+    ],
+    "bannedUntil": "2020-04-06T16:48:18",
+    "banReason": "Banned by staff. RDM",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "Wahed Kopstoot",
+    "identifiers": [
+      "steam:1100001074daf3c",
+      "license:a0e8f85f10e1813a51a6290aede18575ffd4fca8",
+      "xbl:2535469410935612",
+      "live:1055518333138243",
+      "discord:288714602521296896",
+      "ip:141.134.110.230"
+    ],
+    "bannedUntil": "2020-04-06T16:52:43",
+    "banReason": "Kloten.. dit is geen RP",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "InvalidPlayerName",
+    "identifiers": [],
+    "bannedUntil": "2020-04-07T15:22:45",
+    "banReason": "Banned by staff. PRAAAATTTT NEDERLANDS MET ME EVEN NEDERLANDS MET ME, + VDM + RDM",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "Thjeuson",
+    "identifiers": [
+      "steam:110000105d93917",
+      "license:55a20832219ae9032e5981faefd14b16829adf8a",
+      "xbl:2535446536827558",
+      "live:985153964265173",
+      "discord:403245234202345472",
+      "ip:81.204.122.201"
+    ],
+    "bannedUntil": "2020-04-08T16:25:18",
+    "banReason": "VDM,Rijden op velgen,Combatloggen,rijden met een overheidsvoertuig",
+    "bannedBy": "kacperzuzu"
+  },
+  {
+    "playerName": "Tom",
+    "identifiers": [
+      "steam:110000119b065c9",
+      "license:f7b741ea387de6e83fc1c30867941775e7aa273e",
+      "xbl:2535453608848428",
+      "live:844428251659981",
+      "fivem:420710",
+      "ip:77.248.248.5"
+    ],
+    "bannedUntil": "2020-04-07T22:18:38",
+    "banReason": "VDM",
+    "bannedBy": "kacperzuzu"
+  },
+  {
+    "playerName": "AchrafLoco",
+    "identifiers": [
+      "steam:11000013417e34b",
+      "license:30312901a43ef36717b0a821da7a3fae63f05724",
+      "discord:390128916595212289",
+      "ip:85.145.12.180"
+    ],
+    "bannedUntil": "2020-05-06T22:22:35",
+    "banReason": "Banned by staff. HACKER DAG DUSHI",
+    "bannedBy": "JanHertog"
+  },
+  {
+    "playerName": "bread",
+    "identifiers": [
+      "steam:11000010dbebdab",
+      "license:eafec5f997449c9530b40514c49ae656fa79d42a",
+      "live:914797983514675",
+      "discord:558620395037786124",
+      "ip:81.206.120.232"
+    ],
+    "bannedUntil": "2020-04-07T00:05:47",
+    "banReason": "Gta rijstijl",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "levydekker",
+    "identifiers": [
+      "steam:1100001408fad47",
+      "license:9b16f2ef4908d6ae5eaf8513e8f0cf6e0cab94d8",
+      "discord:566602071801987083",
+      "ip:83.128.108.169"
+    ],
+    "bannedUntil": "2020-04-07T18:13:47",
+    "banReason": "Troller",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "Texro",
+    "identifiers": [
+      "steam:11000010efbdfc0",
+      "license:dd5ac9cf93bd58d3d2018939b2b2161bbdf87f2f",
+      "discord:215865520304422912",
+      "ip:213.127.98.16"
+    ],
+    "bannedUntil": "2020-04-09T17:47:12",
+    "banReason": "Banned by staff. | AMBU heli stelen.",
+    "bannedBy": "Potlood"
+  },
+  {
+    "playerName": "Raphael",
+    "identifiers": [
+      "steam:11000011b26c09b",
+      "license:69d1fd51b37b7b4f54c32a223643990fa1564c85",
+      "ip:82.72.220.104"
+    ],
+    "bannedUntil": "2020-04-08T00:29:23",
+    "banReason": "TROLLEN GTA RIJSTIJL EN RAMMEN",
+    "bannedBy": "Patat"
+  },
+  {
+    "playerName": "Mr_White",
+    "identifiers": [
+      "steam:110000115eb1258",
+      "license:f279eac17fd3c7866a3a5e21ab3f453171a520c1",
+      "xbl:2535422325725039",
+      "live:914801618803719",
+      "discord:333590253124321281",
+      "fivem:728476",
+      "ip:94.212.227.6"
+    ],
+    "bannedUntil": "2020-04-09T19:21:21",
+    "banReason": "Banned by staff. failrp, GTA rijstijl, geen intentie tot rp",
+    "bannedBy": "Thibsen"
+  },
+  {
+    "playerName": "Joeybrur",
+    "identifiers": [
+      "steam:11000011c9e0217",
+      "license:27d42e2070a3d7edad26d6690abb6af6b0346814",
+      "xbl:2535451382120652",
+      "live:914802249729469",
+      "discord:287939434521821185",
+      "ip:213.127.45.111"
+    ],
+    "bannedUntil": "2020-04-08T00:33:31",
+    "banReason": "Trollen geen intencie tot RP",
+    "bannedBy": "kacperzuzu"
+  },
+  {
+    "playerName": "Crossy",
+    "identifiers": [
+      "steam:110000137688bf0",
+      "license:a4303c49026815baa10c2854a55d48f266bfe416",
+      "live:844425304025796",
+      "discord:535825337100271646",
+      "ip:86.95.137.212"
+    ],
+    "bannedUntil": "2020-04-08T20:49:18",
+    "banReason": "Banned by staff. | VDM | FailRP.",
+    "bannedBy": "Potlood"
+  },
+  {
+    "playerName": "Cdx",
+    "identifiers": [
+      "steam:1100001184c19c6",
+      "license:2d2f1c2115d9bf3863b8fb243fba282c52cca52b",
+      "xbl:2533275013296275",
+      "live:985156788433005",
+      "discord:545371719703986187",
+      "ip:51.89.138.30"
+    ],
+    "bannedUntil": "2020-05-07T20:53:38",
+    "banReason": "Banned by staff. | VDM | GTA Driving.",
+    "bannedBy": "Potlood"
+  },
+  {
+    "playerName": "shawvyfn",
+    "identifiers": [
+      "steam:11000013c3c1921",
+      "license:a564a33d9ea693c8aaf98d11b6d431d0cca082c6",
+      "live:1055518475086031",
+      "discord:452168717032488971",
+      "ip:83.128.244.14"
+    ],
+    "bannedUntil": "2020-04-09T20:53:42",
+    "banReason": "Failrp | Geen intentie tot rp",
+    "bannedBy": "JustSteijn25"
+  },
+  {
+    "playerName": "Jan Pieterszoon Coen",
+    "identifiers": [
+      "steam:1100001084457fe",
+      "license:cb807d480a840b3560945b4376ce0d06d4411531",
+      "xbl:2533274922529366",
+      "live:1688852379780433",
+      "discord:175986870704930816",
+      "ip:83.128.167.22"
+    ],
+    "bannedUntil": "2020-05-07T21:01:30",
+    "banReason": "Banned by staff.444 vdm trollen",
+    "bannedBy": "Potlood"
+  },
+  {
+    "playerName": "andrehazezjr",
+    "identifiers": [
+      "steam:11000013fb1e97f",
+      "license:58ccb784e3f3b62196d7a78ea4c2fe47f4fcc35d",
+      "xbl:2535410233100242",
+      "live:985157400856899",
+      "discord:614842239385862204",
+      "ip:89.220.158.184"
+    ],
+    "bannedUntil": "2020-05-07T21:31:28",
+    "banReason": "Banned by staff. | FailRP.",
+    "bannedBy": "Potlood"
+  },
+  {
+    "playerName": "Maximpjee",
+    "identifiers": [
+      "steam:1100001365aba47",
+      "license:1dd7ac604ac66f4982c1a216df5a02c88d59a726",
+      "discord:347877858565160960",
+      "ip:178.116.210.25"
+    ],
+    "bannedUntil": "2020-05-07T21:32:05",
+    "banReason": "Skidoo Skiday, you are now permanently away",
+    "bannedBy": "JustSteijn25"
+  },
+  {
+    "playerName": "Daan86",
+    "identifiers": [
+      "steam:110000117e443e5",
+      "license:3ed3ad89e1e4807ec11fa3f3ad02bc414fa7b4c5",
+      "xbl:2535471679680394",
+      "live:844424937348948",
+      "discord:294769640721219586",
+      "ip:81.204.135.149"
+    ],
+    "bannedUntil": "2020-05-07T21:32:20",
+    "banReason": "Skidoo Skiday, you are now permanently away",
+    "bannedBy": "JustSteijn25"
+  },
+  {
+    "playerName": "TheMTnow",
+    "identifiers": [
+      "steam:110000106ce13f9",
+      "license:d8b4fc999502ba6a23f31d17c66cc1a0b0349572",
+      "xbl:2533274997741848",
+      "live:844428040871062",
+      "discord:199190219810013184",
+      "fivem:30440",
+      "ip:83.83.158.120"
+    ],
+    "bannedUntil": "2020-04-07T23:34:55",
+    "banReason": "GTA drivingstyle | Failrp",
+    "bannedBy": "JustSteijn25"
+  },
+  {
+    "playerName": "Berghuis",
+    "identifiers": [
+      "steam:11000011b72476e",
+      "license:0e76eafdc89832196f87252fcd123781c2a82aee",
+      "discord:358679341099515904",
+      "ip:82.74.78.227"
+    ],
+    "bannedUntil": "2020-05-07T21:52:25",
+    "banReason": "Banned by staff. | Mass VDM | Trollen",
+    "bannedBy": "Potlood"
+  },
+  {
+    "playerName": "CrystalCall",
+    "identifiers": [
+      "steam:1100001119a34a1",
+      "license:7a319312ff1f9de20e0dc0513522e62891651942",
+      "discord:347712421735170048",
+      "ip:77.164.76.50"
+    ],
+    "bannedUntil": "2020-04-08T06:34:28",
+    "banReason": "Stelen van ANWB",
+    "bannedBy": "SAGE"
+  },
+  {
+    "playerName": "RubenF",
+    "identifiers": [
+      "steam:11000010603bcad",
+      "license:300f325c73fea7932124d24aa3fe10450ac20463",
+      "xbl:2533274963647195",
+      "live:1055521309063924",
+      "discord:162590910725488640",
+      "ip:86.86.6.228"
+    ],
+    "bannedUntil": "2020-04-09T19:52:32",
+    "banReason": "Combatloggen ",
+    "bannedBy": "kacperzuzu"
+  },
+  {
+    "playerName": "Mr. NoSmurf",
+    "identifiers": [
+      "steam:11000011ca630ac",
+      "license:87c2535bfeb7201c53ba43c032010ee0229d5aed",
+      "xbl:2535412567557708",
+      "live:1055521147406650",
+      "ip:213.127.73.27"
+    ],
+    "bannedUntil": "2020-04-09T01:54:30",
+    "banReason": "GTA rijstijl",
+    "bannedBy": "Dennis"
+  },
+  {
+    "playerName": "clown",
+    "identifiers": [
+      "steam:1100001095303a8",
+      "license:735b97ecbfc943f51da1cbd97b17fd2f9229b1e9",
+      "discord:421057878342762525",
+      "ip:92.109.224.216"
+    ],
+    "bannedUntil": "2020-04-08T22:23:33",
+    "banReason": "Banned by staff. VDM",
+    "bannedBy": "Thibsen"
+  },
+  {
+    "playerName": "Timo11 -",
+    "identifiers": [
+      "steam:11000013dc1177b",
+      "license:5f23e099800da3632dbb5ae7dcbcd31f235c9b89",
+      "xbl:2535443945280855",
+      "live:844425384645710",
+      "discord:559693662510907414",
+      "ip:83.82.42.225"
+    ],
+    "bannedUntil": "2020-04-09T02:35:52",
+    "banReason": "Poging tot VDM",
+    "bannedBy": "kacperzuzu"
+  },
+  {
+    "playerName": "Icy0_0",
+    "identifiers": [
+      "steam:110000115372ab1",
+      "license:7aa1a33818b1c45a8a6320c058b184b74d551744",
+      "live:844424934342008",
+      "discord:377458164733313044",
+      "ip:83.82.56.122"
+    ],
+    "bannedUntil": "2020-04-09T02:36:56",
+    "banReason": "RDM",
+    "bannedBy": "kacperzuzu"
+  },
+  {
+    "playerName": "DL4TU Saqqi",
+    "identifiers": [
+      "steam:1100001404d4937",
+      "license:b1a3568b97f71271eb790de9bb05344327869948",
+      "live:985154294385488",
+      "ip:86.89.114.165"
+    ],
+    "bannedUntil": "2020-05-08T20:56:58",
+    "banReason": "Hacken",
+    "bannedBy": "kacperzuzu"
+  },
+  {
+    "playerName": "Garage Hennie",
+    "identifiers": [
+      "steam:11000010b0b487a",
+      "license:28955a7235d5071bf2ed6b2ee6826c58ec441e31",
+      "xbl:2535410614913578",
+      "live:1759222560147844",
+      "discord:245209665967882241",
+      "ip:77.175.251.19"
+    ],
+    "bannedUntil": "2020-04-09T03:49:20",
+    "banReason": "Combaten ",
+    "bannedBy": "kacperzuzu"
+  },
+  {
+    "playerName": "Squeakmaster csgoatse.com",
+    "identifiers": [
+      "steam:1100001182a53d3",
+      "license:05696de75e9933c9a079013d19aca440ead87216",
+      "discord:246291191967121409",
+      "ip:84.82.144.136"
+    ],
+    "bannedUntil": "2020-04-09T00:23:20",
+    "banReason": "Van een brug afspringen vanmiddag ook der op aangesprokken.",
+    "bannedBy": "kacperzuzu"
+  },
+  {
+    "playerName": "wieger",
+    "identifiers": [
+      "steam:1100001156afec4",
+      "license:9f0a3b7cae0e1e88129cfeed552af335108233c3",
+      "discord:246401576392982528",
+      "ip:31.201.55.169"
+    ],
+    "bannedUntil": "2020-04-09T02:00:53",
+    "banReason": "Klooien",
+    "bannedBy": "SAGE"
+  },
+  {
+    "playerName": "Tim",
+    "identifiers": [
+      "steam:1100001341281c6",
+      "license:188f04649f3a8c4047b6e9eba2e94a18a779c8c0",
+      "xbl:2535421397596006",
+      "live:844425004800147",
+      "discord:379261994475323395",
+      "ip:217.103.166.123"
+    ],
+    "bannedUntil": "2020-04-09T19:16:32",
+    "banReason": "RDM en je gebruik de cliht met w8 tegen de muur",
+    "bannedBy": "kacperzuzu"
+  },
+  {
+    "playerName": "Tom",
+    "identifiers": [
+      "steam:1100001111760f4",
+      "license:e750ea4908756a5eb8922e969c946054b2d9bd40",
+      "xbl:2535445940263480",
+      "live:914801483471309",
+      "discord:338651194194919435",
+      "ip:192.40.57.58"
+    ],
+    "bannedUntil": "2020-04-09T19:17:06",
+    "banReason": "RDM, Gebruik maken van de clith w8 tegen de muur ",
+    "bannedBy": "kacperzuzu"
+  },
+  {
+    "playerName": "dave_gwn1",
+    "identifiers": [
+      "steam:1100001407a9dd8",
+      "license:cca573b337df8bf7e0a6d64c19c71b6e8c80d33a",
+      "discord:543135769678839809",
+      "ip:62.238.216.121"
+    ],
+    "bannedUntil": "2020-05-09T13:29:50",
+    "banReason": "Banned by staff.geen intentie tot rp al waarschuwingen gehad",
+    "bannedBy": "Thibsen"
+  }
+]
