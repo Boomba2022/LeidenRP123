@@ -1,4 +1,4 @@
-print("Meth is geladen")
+print("Meth car got loaded, Made by Kuzkay")
 	
 ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
@@ -8,7 +8,7 @@ AddEventHandler('esx_methcar:start', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	
-	if xPlayer.getInventoryItem('acetone').count >= 5 and xPlayer.getInventoryItem('lithium').count >= 2 and xPlayer.getInventoryItem('kookstel').count >= 1 then
+	if xPlayer.getInventoryItem('acetone').count >= 5 and xPlayer.getInventoryItem('lithium').count >= 2 and xPlayer.getInventoryItem('methlab').count >= 1 then
 		if xPlayer.getInventoryItem('meth').count >= 30 then
 				TriggerClientEvent('esx_methcar:notify', _source, "~r~~h~You cant hold more meth")
 		else
@@ -40,7 +40,7 @@ AddEventHandler('esx_methcar:make', function(posx,posy,posz)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	
-	if xPlayer.getInventoryItem('kookstel').count >= 1 then
+	if xPlayer.getInventoryItem('methlab').count >= 1 then
 	
 		local xPlayers = ESX.GetPlayers()
 		for i=1, #xPlayers, 1 do
@@ -71,6 +71,6 @@ AddEventHandler('esx_methcar:blow', function(posx, posy, posz)
 	for i=1, #xPlayers, 1 do
 		TriggerClientEvent('esx_methcar:blowup', xPlayers[i],posx, posy, posz)
 	end
-	xPlayer.removeInventoryItem('kookstel', 1)
+	xPlayer.removeInventoryItem('methlab', 1)
 end)
 
