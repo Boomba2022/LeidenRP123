@@ -35,7 +35,7 @@ end)
 RegisterNetEvent('esx_methcar:stop')
 AddEventHandler('esx_methcar:stop', function()
 	started = false
-	DisplayHelpText("~r~Productie gestopt...")
+	DisplayHelpText("~r~Production stopped...")
 	FreezeEntityPosition(LastCar, false)
 end)
 RegisterNetEvent('esx_methcar:stopfreeze')
@@ -49,12 +49,12 @@ end)
 
 RegisterNetEvent('esx_methcar:startprod')
 AddEventHandler('esx_methcar:startprod', function()
-	DisplayHelpText("~g~Productie starten")
+	DisplayHelpText("~g~Starting production")
 	started = true
 	FreezeEntityPosition(CurrentVehicle,true)
 	displayed = false
-	print('Meth productie gestart')
-	ESX.ShowNotification("~r~Meth productie is gestart")	
+	print('Started Meth production')
+	ESX.ShowNotification("~r~Meth production has started")	
 	SetPedIntoVehicle(GetPlayerPed(-1), CurrentVehicle, 3)
 	SetVehicleDoorOpen(CurrentVehicle, 2)
 end)
@@ -133,11 +133,11 @@ Citizen.CreateThread(function()
 					if GetPedInVehicleSeat(car, -1) == playerPed then
 						if started == false then
 							if displayed == false then
-								DisplayHelpText("Druk op ~INPUT_CELLPHONE_CAMERA_FOCUS_LOCK~ om te starten met drugs produceren")
+								DisplayHelpText("Press ~INPUT_THROW_GRENADE~ to start making drugs")
 								displayed = true
 							end
 						end
-						if IsControlJustReleased(0, Keys['L']) then
+						if IsControlJustReleased(0, Keys['G']) then
 							if pos.y >= 3500 then
 								if IsVehicleSeatFree(CurrentVehicle, 3) then
 									TriggerServerEvent('esx_methcar:start')	
@@ -147,10 +147,10 @@ Citizen.CreateThread(function()
 									quality = 0
 									
 								else
-									DisplayHelpText('~r~Dit voertuig is al bezet')
+									DisplayHelpText('~r~The car is already occupied')
 								end
 							else
-								ESX.ShowNotification('~r~Je zit te dicht bij de stad, ga verder naar het Noorden om Meth te produceren')
+								ESX.ShowNotification('~r~You are too close to the city, head further up north to begin meth production')
 							end
 							
 							
@@ -172,7 +172,7 @@ Citizen.CreateThread(function()
 					started = false
 					displayed = false
 					TriggerEvent('esx_methcar:stop')
-					print('gestopt making drugs')
+					print('Stopped making drugs')
 					FreezeEntityPosition(LastCar,false)
 				end
 		end
@@ -183,7 +183,7 @@ Citizen.CreateThread(function()
 				Citizen.Wait(6000)
 				if not pause and IsPedInAnyVehicle(playerPed) then
 					progress = progress +  1
-					ESX.ShowNotification('~r~Meth Productie: ~g~~h~' .. progress .. '%')
+					ESX.ShowNotification('~r~Meth production: ~g~~h~' .. progress .. '%')
 					Citizen.Wait(6000) 
 				end
 
@@ -193,32 +193,32 @@ Citizen.CreateThread(function()
 				if progress > 22 and progress < 24 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~De propaan leiding lekt, wat ga je doen?')	
-						ESX.ShowNotification('~o~1. Fixen met tape')
-						ESX.ShowNotification('~o~2. Zo laten ')
-						ESX.ShowNotification('~o~3. Vervangen')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~The propane pipe is leaking, what do you do?')	
+						ESX.ShowNotification('~o~1. Fix using tape')
+						ESX.ShowNotification('~o~2. Leave it be ')
+						ESX.ShowNotification('~o~3. Replace it')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~De tape heeft de lekkage soort van gestopt')
+						ESX.ShowNotification('~r~The tape kinda stopped the leak')
 						quality = quality - 3
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~De propaan tank is geexoplodeerd, je hebt het verpest...')
+						ESX.ShowNotification('~r~The propane tank blew up, you messed up...')
 						TriggerServerEvent('esx_methcar:blow', pos.x, pos.y, pos.z)
 						SetVehicleEngineHealth(CurrentVehicle, 0.0)
 						quality = 0
 						started = false
 						displayed = false
 						ApplyDamageToPed(GetPlayerPed(-1), 10, false)
-						print('gestopt making drugs')
+						print('Stopped making drugs')
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~Goed gedaan, de leiding is in topconditie')
+						ESX.ShowNotification('~r~Good job, the pipe wasnt in a good condition')
 						pause = false
 						quality = quality + 5
 					end
@@ -229,27 +229,27 @@ Citizen.CreateThread(function()
 				if progress > 30 and progress < 32 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~Je hebt een fles acetone op de grond laten vallen, wat doe je nu?')	
-						ESX.ShowNotification('~o~1. Ramen openen om van de geur af te komen')
-						ESX.ShowNotification('~o~2. Zo laten')
-						ESX.ShowNotification('~o~3. Een masker opzetten met een luchtfilter')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~You spilled a bottle of acetone on the ground, what do you do?')	
+						ESX.ShowNotification('~o~1. Open the windows to get rid of the smell')
+						ESX.ShowNotification('~o~2. Leave it be')
+						ESX.ShowNotification('~o~3. Put on a mask with airfilter')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~Je hebt de ramen geopend om van de geur af te komen')
+						ESX.ShowNotification('~r~You opened the windows to get rid of the smell')
 						quality = quality - 1
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~Je bent high geworden door teveel acetone in te ademen')
+						ESX.ShowNotification('~r~You got high from inhaling acetone too much')
 						pause = false
 						TriggerEvent('esx_methcar:drugged')
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~Dat is ook een manier om het probleem op te lossen... denk ik')
+						ESX.ShowNotification('~r~Thats an easy way to fix the issue.. I guess')
 						SetPedPropIndex(playerPed, 1, 26, 7, true)
 						pause = false
 					end
@@ -260,26 +260,26 @@ Citizen.CreateThread(function()
 				if progress > 38 and progress < 40 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~Meth word te snel hard, wat doe je nu? ')	
-						ESX.ShowNotification('~o~1. Verhoog de druk')
-						ESX.ShowNotification('~o~2. Temperatuur verhogen')
-						ESX.ShowNotification('~o~3. Druk verlagen')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~Meth becomes solid too fast, what do you do? ')	
+						ESX.ShowNotification('~o~1. Raise the pressure')
+						ESX.ShowNotification('~o~2. Raise the temperature')
+						ESX.ShowNotification('~o~3. Lower the pressure')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~Je hebt de druk verhoogd en de propaan is aan het weglekken, je hebt het verlaagd en het is oké voor nu')
+						ESX.ShowNotification('~r~You raised the pressure and the propane started escaping, you lowered it and its okay for now')
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~Temperatuur verhogen heeft geholpen...')
+						ESX.ShowNotification('~r~Raising the temperature helped...')
 						quality = quality + 5
 						pause = false
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~Druk verlagen heeft het erger gemaakt...')
+						ESX.ShowNotification('~r~Lowering the pressure just made it worse...')
 						pause = false
 						quality = quality -4
 					end
@@ -290,27 +290,27 @@ Citizen.CreateThread(function()
 				if progress > 41 and progress < 43 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~Je hebt perongeluk teveel acetone toegevoegd, wat doe je nu?')	
-						ESX.ShowNotification('~o~1. Niks doen')
-						ESX.ShowNotification('~o~2. Proberen het eruit te zuigen met een rietje')
-						ESX.ShowNotification('~o~3. Meer lithium toevoegen om het te balanceren')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~You accidentally pour too much acetone, what do you do?')	
+						ESX.ShowNotification('~o~1. Do nothing')
+						ESX.ShowNotification('~o~2. Try to sucking it out using syringe')
+						ESX.ShowNotification('~o~3. Add more lithium to balance it out')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~Het meth ruikt niet zoals acetone')
+						ESX.ShowNotification('~r~The meth is not smelling like acetone a lot')
 						quality = quality - 3
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~Het werkte soort van maar het is Neeg steeds teveel')
+						ESX.ShowNotification('~r~It kind of worked but its still too much')
 						pause = false
 						quality = quality - 1
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~Je hebt alle Chemicaliën gebalanceerd en het is weer goed!')
+						ESX.ShowNotification('~r~You successfully balanced both chemicals out and its good again')
 						pause = false
 						quality = quality + 3
 					end
@@ -321,26 +321,26 @@ Citizen.CreateThread(function()
 				if progress > 46 and progress < 49 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~Je hebt wat kleurstof gevonden, wat ga je ermee doen?')	
-						ESX.ShowNotification('~o~1. Toevoegen')
-						ESX.ShowNotification('~o~2. Wegzetten')
-						ESX.ShowNotification('~o~3. Opdrinken')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~You found some water coloring, what do you do?')	
+						ESX.ShowNotification('~o~1. Add it in')
+						ESX.ShowNotification('~o~2. Put it away')
+						ESX.ShowNotification('~o~3. Drink it')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~Goed idee, mensen houden van kleuren')
+						ESX.ShowNotification('~r~Good idea, people like colors')
 						quality = quality + 4
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~Het verpest mogelijk de smaak van de meth')
+						ESX.ShowNotification('~r~Yeah it might destroy the taste of meth')
 						pause = false
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~Je voelt je een beetje raar en duizelig maar het is allemaal goed')
+						ESX.ShowNotification('~r~You are a bit weird and feel dizzy but its all good')
 						pause = false
 					end
 				end
@@ -350,27 +350,27 @@ Citizen.CreateThread(function()
 				if progress > 55 and progress < 58 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~Het filter is verstopt, wat doe je nu?')	
-						ESX.ShowNotification('~o~1. Schoonmaken met perslucht')
-						ESX.ShowNotification('~o~2. Het filter vervangen')
-						ESX.ShowNotification('~o~3. Schoonmaken met een tandenborstel')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~The filter is clogged, what do you do?')	
+						ESX.ShowNotification('~o~1. Clean it using compressed air')
+						ESX.ShowNotification('~o~2. Replace the filter')
+						ESX.ShowNotification('~o~3. Clean it using a tooth brush')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~Door de perslucht zit je nu onder het vloeibare meth')
+						ESX.ShowNotification('~r~Compressed air sprayed the liquid meth all over you')
 						quality = quality - 2
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~Vervangen was de beste optie')
+						ESX.ShowNotification('~r~Replacing it was probably the best option')
 						pause = false
 						quality = quality + 3
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~Dit werkte best wel goed, maar het is Neeg steeds een beetje vies')
+						ESX.ShowNotification('~r~This worked quite well but its still kinda dirty')
 						pause = false
 						quality = quality - 1
 					end
@@ -381,27 +381,27 @@ Citizen.CreateThread(function()
 				if progress > 58 and progress < 60 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~Je hebt een fles acetone laten vallen op de grond, wat doe je nu?')	
-						ESX.ShowNotification('~o~1. Ramen openen om van de geur af te komen')
-						ESX.ShowNotification('~o~2. Zo laten')
-						ESX.ShowNotification('~o~3. Een masker opzetten met een luchtfilter')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~You spilled a bottle of acetone on the ground, what do you do?')	
+						ESX.ShowNotification('~o~1. Open the windows to get rid of the smell')
+						ESX.ShowNotification('~o~2. Leave it be')
+						ESX.ShowNotification('~o~3. Put on a mask with airfilter')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~Je hebt de ramen geopend om van de geur af te komen')
+						ESX.ShowNotification('~r~You opened the windows to get rid of the smell')
 						quality = quality - 1
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~Je bent high geworden door teveel actetone in te ademen')
+						ESX.ShowNotification('~r~You got high from inhaling acetone too much')
 						pause = false
 						TriggerEvent('esx_methcar:drugged')
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~Dat is ook een manier om het probleem op te lossen... denk ik')
+						ESX.ShowNotification('~r~Thats an easy way to fix the issue.. I guess')
 						SetPedPropIndex(playerPed, 1, 26, 7, true)
 						pause = false
 					end
@@ -412,32 +412,32 @@ Citizen.CreateThread(function()
 				if progress > 63 and progress < 65 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~De propaan leiding lekt, wat doe je nu?')	
-						ESX.ShowNotification('~o~1. Fixen met tape')
-						ESX.ShowNotification('~o~2. Zo laten ')
-						ESX.ShowNotification('~o~3. Vervangen')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~The propane pipe is leaking, what do you do?')	
+						ESX.ShowNotification('~o~1. Fix using tape')
+						ESX.ShowNotification('~o~2. Leave it be ')
+						ESX.ShowNotification('~o~3. Replace it')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~De tape heeft het een soort van gefixed')
+						ESX.ShowNotification('~r~The tape kinda stopped the leak')
 						quality = quality - 3
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~De propaantank is gexplodeerd, je hebt het verpest...')
+						ESX.ShowNotification('~r~The propane tank blew up, you messed up...')
 						TriggerServerEvent('esx_methcar:blow', pos.x, pos.y, pos.z)
 						SetVehicleEngineHealth(CurrentVehicle, 0.0)
 						quality = 0
 						started = false
 						displayed = false
 						ApplyDamageToPed(GetPlayerPed(-1), 10, false)
-						print('gestopt making drugs')
+						print('Stopped making drugs')
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~Goed idee, de leiding zag er niet al te best uit')
+						ESX.ShowNotification('~r~Good job, the pipe wasnt in a good condition')
 						pause = false
 						quality = quality + 5
 					end
@@ -448,27 +448,27 @@ Citizen.CreateThread(function()
 				if progress > 71 and progress < 73 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~Het filter is verstopt, wat doe je nu?')	
-						ESX.ShowNotification('~o~1. Schoonmaken met perslucht')
-						ESX.ShowNotification('~o~2. Het filter vervangen')
-						ESX.ShowNotification('~o~3. Schoonmaken met een tandenborstel')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~The filter is clogged, what do you do?')	
+						ESX.ShowNotification('~o~1. Clean it using compressed air')
+						ESX.ShowNotification('~o~2. Replace the filter')
+						ESX.ShowNotification('~o~3. Clean it using a tooth brush')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~Door de perslucht zit je nu onder het vloeibare meth')
+						ESX.ShowNotification('~r~Compressed air sprayed the liquid meth all over you')
 						quality = quality - 2
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~Vervangen was de beste optie')
+						ESX.ShowNotification('~r~Replacing it was probably the best option')
 						pause = false
 						quality = quality + 3
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~Dit werkte best wel goed, maar het is Neeg steeds een beetje vies')
+						ESX.ShowNotification('~r~This worked quite well but its still kinda dirty')
 						pause = false
 						quality = quality - 1
 					end
@@ -479,27 +479,27 @@ Citizen.CreateThread(function()
 				if progress > 76 and progress < 78 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~Je hebt perongeluk teveel acetone toegevoegd, wat doe je nu?')	
-						ESX.ShowNotification('~o~1. Niks doen')
-						ESX.ShowNotification('~o~2. Proberen het eruit te zuigen met een rietje')
-						ESX.ShowNotification('~o~3. Meer lithium toevoegen om het te balanceren')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~You accidentally pour too much acetone, what do you do?')	
+						ESX.ShowNotification('~o~1. Do nothing')
+						ESX.ShowNotification('~o~2. Try to sucking it out using syringe')
+						ESX.ShowNotification('~o~3. Add more lithium to balance it out')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~Het meth ruikt niet zoals acetone')
+						ESX.ShowNotification('~r~The meth is not smelling like acetone a lot')
 						quality = quality - 3
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~Het werkte soort van maar het is Neeg steeds teveel')
+						ESX.ShowNotification('~r~It kind of worked but its still too much')
 						pause = false
 						quality = quality - 1
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~Je hebt alle Chemicaliën gebalanceerd en het is weer goed!')
+						ESX.ShowNotification('~r~You successfully balanced both chemicals out and its good again')
 						pause = false
 						quality = quality + 3
 					end
@@ -510,27 +510,27 @@ Citizen.CreateThread(function()
 				if progress > 82 and progress < 84 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~Je moet schijten, wat ga je doen?')	
-						ESX.ShowNotification('~o~1. Proberen op te houden')
-						ESX.ShowNotification('~o~2. Naar buiten gaan en schijten')
-						ESX.ShowNotification('~o~3. Binnen schijten')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~You need to take a shit, what do you do?')	
+						ESX.ShowNotification('~o~1. Try to hold it')
+						ESX.ShowNotification('~o~2. Go outside and take a shit')
+						ESX.ShowNotification('~o~3. Shit inside')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~Goed idee, werken gaat voor daarna schijten')
+						ESX.ShowNotification('~r~Good job, you need to work first, shit later')
 						quality = quality + 1
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~Wanneer je buiten was is het glas gevallen van de tafel en zit alles eronder...')
+						ESX.ShowNotification('~r~While you were outside the glass fell off the table and spilled all over the floor...')
 						pause = false
 						quality = quality - 2
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~De lucht ruikt naar schijt nu, de meth ruikt nu naar schijt')
+						ESX.ShowNotification('~r~The air smells like shit now, the meth smells like shit now')
 						pause = false
 						quality = quality - 1
 					end
@@ -541,27 +541,27 @@ Citizen.CreateThread(function()
 				if progress > 88 and progress < 90 then
 					pause = true
 					if selection == 0 then
-						ESX.ShowNotification('~o~Wil je meer glasscherven toevoegen aan de meth zodat het lijkt dat je er meer van hebt?')	
-						ESX.ShowNotification('~o~1. Ja!')
-						ESX.ShowNotification('~o~2. Nee')
-						ESX.ShowNotification('~o~3. Wat nou als ik meth toevoeg aan het glas?')
-						ESX.ShowNotification('~c~Druk op het nummer van de optie die je wilt uitvoeren')
+						ESX.ShowNotification('~o~Do you add some glass pieces to the meth so it looks like you have more of it?')	
+						ESX.ShowNotification('~o~1. Yes!')
+						ESX.ShowNotification('~o~2. No')
+						ESX.ShowNotification('~o~3. What if I add meth to glass instead?')
+						ESX.ShowNotification('~c~Press the number of the option you want to do')
 					end
 					if selection == 1 then
 						print("Slected 1")
-						ESX.ShowNotification('~r~Nice je hebt er meer zakken uit gekregen')
+						ESX.ShowNotification('~r~Now you got few more baggies out of it')
 						quality = quality + 1
 						pause = false
 					end
 					if selection == 2 then
 						print("Slected 2")
-						ESX.ShowNotification('~r~Je hebt een goede drug producent, je product is hoge kwaliteit')
+						ESX.ShowNotification('~r~You are a good drug maker, your product is high quality')
 						pause = false
 						quality = quality + 1
 					end
 					if selection == 3 then
 						print("Slected 3")
-						ESX.ShowNotification('~r~Dat is iets teveel, het is meer glas dan meth maar ok...')
+						ESX.ShowNotification('~r~Thats a bit too much, its more glass than meth but ok')
 						pause = false
 						quality = quality - 1
 					end
@@ -579,7 +579,7 @@ Citizen.CreateThread(function()
 						selection = 0
 						quality = quality + 1
 						progress = progress +  math.random(1, 2)
-						ESX.ShowNotification('~r~Meth Productie: ~g~~h~' .. progress .. '%')
+						ESX.ShowNotification('~r~Meth production: ~g~~h~' .. progress .. '%')
 					end
 				else
 					TriggerEvent('esx_methcar:stop')
@@ -588,8 +588,8 @@ Citizen.CreateThread(function()
 			else
 				TriggerEvent('esx_methcar:stop')
 				progress = 100
-				ESX.ShowNotification('~r~Meth Productie: ~g~~h~' .. progress .. '%')
-				ESX.ShowNotification('~g~~h~Productie klaar!')
+				ESX.ShowNotification('~r~Meth production: ~g~~h~' .. progress .. '%')
+				ESX.ShowNotification('~g~~h~Production finished')
 				TriggerServerEvent('esx_methcar:finish', quality)
 				FreezeEntityPosition(LastCar, false)
 			end	
@@ -607,7 +607,7 @@ Citizen.CreateThread(function()
 					started = false
 					displayed = false
 					TriggerEvent('esx_methcar:stop')
-					print('Gestopt met het maken van meth')
+					print('Stopped making drugs')
 					FreezeEntityPosition(LastCar,false)
 				end		
 			end
@@ -621,15 +621,15 @@ Citizen.CreateThread(function()
 		if pause == true then
 			if IsControlJustReleased(0, Keys['1']) then
 				selection = 1
-				ESX.ShowNotification('~g~Nummer 1 geselecteerd')
+				ESX.ShowNotification('~g~Selected option number 1')
 			end
 			if IsControlJustReleased(0, Keys['2']) then
 				selection = 2
-				ESX.ShowNotification('~g~Nummer 2 geselecteerd')
+				ESX.ShowNotification('~g~Selected option number 2')
 			end
 			if IsControlJustReleased(0, Keys['3']) then
 				selection = 3
-				ESX.ShowNotification('~g~Nummer 3 geselecteerd')
+				ESX.ShowNotification('~g~Selected option number 3')
 			end
 		end
 
