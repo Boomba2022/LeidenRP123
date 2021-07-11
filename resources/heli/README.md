@@ -1,17 +1,32 @@
-# FiveM - heli by mraes
-Version 1.3 - 2017/06/09
+# FiveM - HeliCam by davwheat
 
-Instructions:
- * Download resource
- * Add heli entry to your citmp-server.yml AutoStartResources
- * Press the the E key to switch to the HeliCam
- * Whilst in Helicam: move mouse to rotate cam, scroll to zoom and use the RIGHT MOUSE BUTTON to switch between normal, nightvision and thermal vision
- * Whilst in Helicam: when hovering over a vehicle and close enough to it, you can see vehicle info. If you can see this, press SPACE to lock camera onto the vehicle. SPACE again to unlock camera.
- * Press the X key to rappel from the helicopter
- * Press the G key as helicopter pilot to switch on the spotlight (this is synced across the network to all players)
- 
- Changelog:
- * 2017/06/08: Added smoothing to camera movement.
- * 2017/06/08: Added Nightvision and Thermal Vision.
- * 2017/06/09: Made camera movement smoother when zoomed in.
- * 2017/06/12: Added rappel, spotlight and showing of vehicle information + lock onto vehicle. Changed some keys. Added screen effect overlay to make it look like cam feed.
+(Forked from [mraes](https://www.github.com/mraes))
+Version 3.0 - 24/05/2020
+
+## Instructions
+
+* Download resource
+* Add `start heli` or `ensure heli` entry to your FX Server config
+
+**NOTE:** Do not rename the resource folder, otherwise the resource will break. Instead, but it inside a resource group folder (e.g. `[HeliCam]`).
+
+## Controls
+
+* Press **E** (Right D-Pad) to switch to the HeliCam.
+* **Move mouse** (right stick) to rotate camera view.
+* Use **scroll wheel** to zoom in/out.
+* Use **RIGHT MOUSE BUTTON** (left trigger) to switch between normal, night and thermal vision.
+* Use **SPACE** (X on controller) while scanning a vehicle to lock onto it
+* Use **X** (push left stick) to rappel from the helicopter while in passenger seat
+
+## Changelog
+
+Date format: DD/MM/YYYY
+
+* **08/06/2017**: Added smoothing to camera movement.
+* **08/06/2017**: Added night vision and thermal vision.
+* **09/06/2017**: Made camera movement smoother when zoomed in.
+* **12/06/2017**: Added rappel, spotlight and showing of vehicle information + lock onto vehicle. Changed some keys. Added screen effect overlay to make it look like cam feed.
+* **05/11/2018**: Forked by davwheat
+* **24/04/2020**: Update UI using NUI system; add server-sync spotlight.
+* **24/04/2020**: Add UI indicators for spotlight and vehicle speed.
