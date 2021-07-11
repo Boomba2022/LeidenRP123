@@ -3,7 +3,7 @@ Config	=	{}
 Config.CheckOwnership = false -- If true, Only owner of vehicle can store items in trunk.
 Config.AllowPolice = true -- If true, police will be able to search players' trunks.
 
-Config.Locale   = 'en'
+Config.Locale   = 'nl'
 
  -- Limit, unit can be whatever you want. Originally grams (as average people can hold 25kg)
 Config.Limit = 25000
