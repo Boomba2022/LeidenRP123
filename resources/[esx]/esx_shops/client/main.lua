@@ -102,7 +102,7 @@ Citizen.CreateThread(function()
 
 		for k,v in pairs(Config.Zones) do
 			for i = 1, #v.Pos, 1 do
-				local distance = #(playerCoords - v.Pos[i])
+				local distance = #(Coords - v.Pos[i])
 
 				if distance < Config.DrawDistance then
 					if v.ShowMarker then
