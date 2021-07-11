@@ -3,7 +3,7 @@ Config.DrawDistance = 100
 Config.Size         = {x = 1.5, y = 1.5, z = 1.5}
 Config.Color        = {r = 190, g = 190, b = 190}
 Config.Type         = 27
-Config.Locale       = 'sv'
+Config.Locale       = 'en'
 
 
 Config.Map = {
