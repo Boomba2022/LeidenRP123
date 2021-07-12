@@ -1,16 +1,16 @@
 ## You CAN edit the following:
 endpoint_add_tcp "0.0.0.0:30120"
 endpoint_add_udp "0.0.0.0:30120"
-sv_maxclients 64
+sv_maxclients 32
 set steam_webApiKey "36C8D2FFCA04AA9F0A22C4D6589D9B18"
 sets tags "default, esx, roleplay, nl, be, serieuze roleplay, criminelen"
 
 ## You MAY edit the following:
-sv_licenseKey "q3dv4dckoyplp3ml0rqme5zz1zkgsoj2"
+sv_licenseKey "cfxk_z1acraoAJpnllRhFMSx2_3QEdha"
 sv_hostname "Leiden Roleplay"
 sets sv_projectName "Leiden RP"
 sets locale "nl-NL" 
-set mysql_connection_string "server=localhost;uid=root;password=Meij9925;database=plumeesx_86a41b"
+set mysql_connection_string "server=localhost;uid=root;password=;database=plumeesx_86a41b"
 load_server_icon "logo.png"
 
 ## These resources will start by default.
@@ -147,7 +147,7 @@ add_ace group.admin command allow # allow all commands
 add_ace group.admin command.quit deny # but don't allow quit
 
 #start esx_addons_gcphone
-start gcphone
+#sstart gcphone
 
 start mythic_notify
 ## ESX v1-final Stuff
@@ -155,6 +155,9 @@ ensure mysql-async
 ensure cron
 ensure skinchanger
 ensure es_extended
+
+
+start gcphone
 start esx_weaponsync
 ensure esx_menu_default
 ensure esx_menu_dialog
@@ -202,6 +205,9 @@ start rp-radio
 start ls-radio
 start esx_rope
 start esx_handcuffs
+start esx_boatshop
+start esx_aircraftshop
+start LE_Meth
 
 #chat#
 start esx_rpchat
@@ -219,6 +225,7 @@ start Badger_Discord_API
 start DiscordAcePerms
 
 #STANDALONE#
+start id
 start LegacyFuel
 start new_banking
 start dpemotes
@@ -288,6 +295,9 @@ start cyclus-witwas
 start cyclus-technician
 start disabledispatch
 start esx_doorlock
+start LE_ambulance
+start esx_ambulanceGarage
+start DeathCam 
 
 #LEIDEN#
 start LE_mededeling
@@ -323,12 +333,16 @@ start Postcodecommand
 #start LE_pillnew
 #start LE_proppill
 #start LE_props
-start LE_ziekenhuis
+#start LE_ziekenhuis
 start LE_cruisecontrol
 
 #MAPS#
 start Bennys
 start ALR
+start mosleynutt
+start maps
+start PolyZone
+start CayoPerico 
 
 #vMenu#
 ensure vMenu
@@ -460,6 +474,7 @@ ensure bob74_ipl
 ensure esx_adminplus
 ensure Kl_HudV2
 ensure loadingscreen
+start LE_ziekenhuis
 
 ## EasyAdmin stuff
 setr ea_LanguageName "en"                # set our language to english
