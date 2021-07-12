@@ -6,11 +6,11 @@ set steam_webApiKey "36C8D2FFCA04AA9F0A22C4D6589D9B18"
 sets tags "default, esx, roleplay, nl, be, serieuze roleplay, criminelen"
 
 ## You MAY edit the following:
-sv_licenseKey "q3dv4dckoyplp3ml0rqme5zz1zkgsoj2"
+sv_licenseKey "cfxk_1dcvCwzZbyT1RN6oHPlOO_48PJBR"
 sv_hostname "Leiden Roleplay"
 sets sv_projectName "Leiden RP"
 sets locale "nl-NL" 
-set mysql_connection_string "server=localhost;uid=root;password=Meij9925;database=plumeesx_86a41b"
+set mysql_connection_string "server=localhost;uid=root;password=;database=plumeesx_86a41b"
 load_server_icon "logo.png"
 
 ## These resources will start by default.
@@ -54,6 +54,7 @@ add_ace group.aowner command.bh deny
 add_ace group.hman command allow # allow all commands
 add_ace group.hman command.quit deny # but don't allow quit
 add_ace group.hman command.hman allow
+add_ace group.ahman command.bh deny
 
 # Add system Asst. Hoofd Managment
 add_ace group.ahman command allow # allow all commands
@@ -146,17 +147,26 @@ exec permissions.cfg
 add_ace group.admin command allow # allow all commands
 add_ace group.admin command.quit deny # but don't allow quit
 
-#start esx_addons_gcphone
-start gcphone
 
+#start bob74_ipl
+start esx_vehiclelock
+start esx_mafiajob 
+#start esx_addons_gcphone
+#sstart gcphone
+start LE_replacements
 start mythic_notify
 ## ESX v1-final Stuff
 ensure mysql-async
 ensure cron
 ensure skinchanger
 ensure es_extended
+start esx_outlawalert
+start esx_weaponsync
+start gcphone
 start esx_weaponsync
 ensure esx_menu_default
+start rocket-noodknop 
+start heli
 ensure esx_menu_dialog
 ensure esx_menu_list
 ensure esx_datastore
@@ -184,11 +194,12 @@ ensure esx_weaponshop
 ensure esx_clotheshop
 ensure esx_barbershop
 ensure esx_drugs
+start noweapondrops
 ensure esx_holdup
 start esx_scoreboard
 start esx-weapon-pull-out
 start esx_inventoryhud
-start esx_inventoryhud_trunk
+start esx_trunk
 start esx_inventoryhud_glovebox
 start esx_wapendealer
 start ESX_GiveCarKeys
@@ -202,6 +213,8 @@ start rp-radio
 start ls-radio
 start esx_rope
 start esx_handcuffs
+start esx_boatshop
+start esx_aircraftshop
 
 #chat#
 start esx_rpchat
@@ -219,6 +232,7 @@ start Badger_Discord_API
 start DiscordAcePerms
 
 #STANDALONE#
+start id
 start LegacyFuel
 start new_banking
 start dpemotes
@@ -288,6 +302,9 @@ start cyclus-witwas
 start cyclus-technician
 start disabledispatch
 start esx_doorlock
+start LE_ambulance
+start esx_ambulanceGarage
+start DeathCam 
 
 #LEIDEN#
 start LE_mededeling
@@ -323,12 +340,17 @@ start Postcodecommand
 #start LE_pillnew
 #start LE_proppill
 #start LE_props
-start LE_ziekenhuis
 start LE_cruisecontrol
 
 #MAPS#
+#start bob74_ipl
+start LE_ziekenhuis
 start Bennys
 start ALR
+start mosleynutt
+start maps
+start PolyZone
+#start CayoPerico 
 
 #vMenu#
 ensure vMenu
@@ -456,7 +478,6 @@ add_ace group.jmod command.jmod allow
 
 
 ## Extra stuff
-ensure bob74_ipl
 ensure esx_adminplus
 ensure Kl_HudV2
 ensure loadingscreen
