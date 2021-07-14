@@ -1,14 +1,17 @@
+
+--- SERVER
+
 ESX               = nil
 local cars 		  = {}
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-ESX.RegisterServerCallback('esx_darcoche:requestPlayerCars', function(source, cb, plate)
+ESX.RegisterServerCallback('esx_givecarkeys:requestPlayerCars', function(source, cb, plate)
 
 	local xPlayer = ESX.GetPlayerFromId(source)
 
 	MySQL.Async.fetchAll(
-		'SELECT * FROM owned_vehicles WHERE owner = @identifier', 
+		'SELECT * FROM owned_vehicles WHERE owner = @identifier',
 		{
 			['@identifier'] = xPlayer.identifier
 		},
@@ -20,7 +23,7 @@ ESX.RegisterServerCallback('esx_darcoche:requestPlayerCars', function(source, cb
 
 				local vehicleProps = json.decode(result[i].vehicle)
 
-				if vehicleProps.plate == plate then
+				if trim(vehicleProps.plate) == trim(plate) then
 					found = true
 					break
 				end
@@ -37,8 +40,14 @@ ESX.RegisterServerCallback('esx_darcoche:requestPlayerCars', function(source, cb
 	)
 end)
 
-RegisterServerEvent('esx_darcoche:setVehicleOwnedPlayerId')
-AddEventHandler('esx_darcoche:setVehicleOwnedPlayerId', function (playerId, vehicleProps)
+RegisterServerEvent('esx_givecarkeys:frommenu')
+AddEventHandler('esx_givecarkeys:frommenu', function ()
+	TriggerClientEvent('esx_givecarkeys:keys', source)
+end)
+
+
+RegisterServerEvent('esx_givecarkeys:setVehicleOwnedPlayerId')
+AddEventHandler('esx_givecarkeys:setVehicleOwnedPlayerId', function (playerId, vehicleProps)
 	local xPlayer = ESX.GetPlayerFromId(playerId)
 
 	MySQL.Async.execute('UPDATE owned_vehicles SET owner=@owner WHERE plate=@plate',
@@ -46,15 +55,21 @@ AddEventHandler('esx_darcoche:setVehicleOwnedPlayerId', function (playerId, vehi
 		['@owner']   = xPlayer.identifier,
 		['@plate']   = vehicleProps.plate
 	},
-	
+
 	function (rowsChanged)
-		TriggerClientEvent('esx:showNotification', playerId, 'Je hebt een nieuwe auto gekregen met het kenteken ~g~' ..vehicleProps.plate..'!', vehicleProps.plate)
-
-	end) 
+		TriggerClientEvent('esx:showNotification', playerId, 'You have got a new car with plate ~g~' ..vehicleProps.plate..'!', vehicleProps.plate)
+	end)
 end)
 
-TriggerEvent('es:addGroupCommand', 'geefsleutel', 'user', function(source, args, user)
-	TriggerClientEvent('esx_darcoche:Dar', source)
-end, function(source, args, user)
-	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'ERROR - Vraag een systeem beheerder om hulp.' } })
+function trim(s)
+    if s ~= nil then
+		return s:match("^%s*(.-)%s*$")
+	else
+		return nil
+    end
+end
+
+RegisterCommand('givecarkeys', function(source, args, user)
+TriggerClientEvent('esx_givecarkeys:keys', source)
 end)
+

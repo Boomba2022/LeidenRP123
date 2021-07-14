@@ -1,3 +1,5 @@
+-- Client
+
 ESX               = nil
 
 Citizen.CreateThread(function()
@@ -7,40 +9,44 @@ Citizen.CreateThread(function()
 	end
 end)
 
-RegisterNetEvent("esx_darcoche:Dar")
-AddEventHandler("esx_darcoche:Dar", function()
 
-DarCoche()
+RegisterNetEvent("esx_givecarkeys:keys")
+AddEventHandler("esx_givecarkeys:keys", function()
+
+giveCarKeys()
 
 end)
 
-function DarCoche()
+function giveCarKeys()
 	local playerPed = GetPlayerPed(-1)
 	local coords    = GetEntityCoords(playerPed)
 
 	if IsPedInAnyVehicle(playerPed,  false) then
-		vehicle = GetVehiclePedIsIn(playerPed, false)
-	else
-		vehicle = GetClosestVehicle(coords.x, coords.y, coords.z, 7.0, 0, 70)
-	end
-	
+        vehicle = GetVehiclePedIsIn(playerPed, false)			
+    else
+        vehicle = GetClosestVehicle(coords.x, coords.y, coords.z, 7.0, 0, 70)
+    end
+
+
 	local plate = GetVehicleNumberPlateText(vehicle)
 	local vehicleProps = ESX.Game.GetVehicleProperties(vehicle)
 	
 
-	ESX.TriggerServerCallback('esx_darcoche:requestPlayerCars', function(isOwnedVehicle)
-
-		if isOwnedVehicle then
+	ESX.TriggerServerCallback('esx_givecarkeys:requestPlayerCars', function(isOwnedVehicle)
+		if not isOwnedVehicle then
+			ESX.ShowNotification('You dont own any cars nearby.')
+		elseif isOwnedVehicle then
+			local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
 		
-		local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
+
 
 if closestPlayer == -1 or closestDistance > 3.0 then
-  ESX.ShowNotification('Geen inwoner dichtbij!')
+  ESX.ShowNotification('No players nearby!')
 else
-  ESX.ShowNotification('U geeft uw autosleutels van uw voertuig met kenteken ~g~'..vehicleProps.plate..'!')
-  TriggerServerEvent('esx_darcoche:setVehicleOwnedPlayerId', GetPlayerServerId(closestPlayer), vehicleProps)
+  ESX.ShowNotification('You are giving your car keys for vehicle with plate ~g~'..vehicleProps.plate..'!')
+  TriggerServerEvent('esx_givecarkeys:setVehicleOwnedPlayerId', GetPlayerServerId(closestPlayer), vehicleProps)
 end
-		
+
 		end
 	end, GetVehicleNumberPlateText(vehicle))
 end
