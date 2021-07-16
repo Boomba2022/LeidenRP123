@@ -404,3 +404,38 @@ AddEventHandler('playerSpawned', function()
   used3 = 0
   used4 = 0
 end)
+
+RegisterNetEvent('pepe_celowniki:use')
+AddEventHandler('pepe_celowniki:use', function( type )
+  if weapons[GetSelectedPedWeapon(PlayerPedId())] and weapons[GetSelectedPedWeapon(PlayerPedId())][type] then
+      if not HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), weapons[GetSelectedPedWeapon(PlayerPedId())][type]) then
+          GiveWeaponComponentToPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), weapons[GetSelectedPedWeapon(PlayerPedId())][type])  
+          ESX.ShowNotification(string.format('%s %s', "You used your", type))
+      else
+          RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), weapons[GetSelectedPedWeapon(PlayerPedId())][type])  
+          ESX.ShowNotification(string.format('%s %s', "You removed your ", type))
+      end
+  else
+      ESX.ShowNotification(string.format('%s %s %s', 'This ', type, " doesn't fit on your weapon.."))
+  end
+end)
+
+Citizen.CreateThread(function()
+while true do
+  Citizen.Wait(0)
+  if IsControlJustPressed(0, 121) then
+    if weapons[GetSelectedPedWeapon(PlayerPedId())] then
+      for k,v in pairs(weapons) do
+        if GetSelectedPedWeapon(PlayerPedId()) == k then
+          if HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.celownik) then
+            TriggerServerEvent('pepe_celowniki:giveBack', 'celownik')
+            ESX.ShowNotification("You removed your Sight")
+            RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.celownik)
+          
+          end
+        end
+      end
+    end
+  end
+end
+end)
