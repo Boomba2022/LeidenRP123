@@ -57,4 +57,5 @@ INSERT INTO `vehicles` (name, model, price, category) VALUES
 	('Lamborghini Huracan Cabrio','hurevos','190000','sports'), 
 	('Brabus 800 C63','rmode63s','220000','sports'), 
 	('Porsche GT3 RS','2019gt3rs','140000','sports'), 
+        ('Bmw X7','bmwg07','120000','sports'), 
 ;
